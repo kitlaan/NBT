@@ -25,7 +25,7 @@ class TreeManipulationTest(unittest.TestCase):
     def testTagAdd(self):
         self.testRootNodeSetup()
         #try a simple byte tag
-        self.nbtfile.tags.append(TAG_Byte(name="TestByte", value=10))
+        self.nbtfile.append(TAG_Byte(name="TestByte", value=10))
         self.assertEqual(self.nbtfile["TestByte"].value, 10)
         #etcetera..... will finish later
         
